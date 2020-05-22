@@ -1,0 +1,24 @@
+@import 'styles/variables.scss';
+
+.base-input {
+  margin-bottom: 20px;
+
+  &__label {
+    font-size: $small-font;
+    color: $grey;
+  }
+  &__input {
+    padding: 8px 3px;
+    border: none;
+    border-bottom: 2px solid $highlight;
+    font-size: $default-font;
+    outline: 0;
+    width: 250px;
+    transition: $basic-transition;
+
+    &:hover,
+    &:focus {
+      border-color: $highlight-dark;
+    }
+  }
+}

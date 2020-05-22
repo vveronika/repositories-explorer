@@ -1,0 +1,27 @@
+@import 'styles/variables.scss';
+
+.sub-header {
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    font-size: $medium-font;
+
+    &--underline {
+      position: relative;
+      font-size: $medium-font;
+      margin: 0 5px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 10px;
+        background-color: $highlight-text-underline;
+        bottom: 1px;
+        left: -2px;
+        z-index: -1;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import 'styles/variables.scss';
+
+.expansion-panel {
+  box-shadow: 0px 2px 1px -1px #ffbab2, 0px 1px 1px 0px #ffbab2,
+    0px 1px 3px 0px #ffbab2 !important;
+  width: 480px;
+
+  .MuiExpansionPanelDetails-root {
+    flex-direction: column;
+  }
+
+  .MuiTypography-body1 {
+    width: 100%;
+  }
+  .MuiIconButton-root {
+    color: $primary;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .expansion-panel {
+    width: 320px;
+  }
+}
